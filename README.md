@@ -34,3 +34,5 @@ cd to-do-list
 npm install
 npx expo start
 ```
+## Você pode baixar o app e testar em seu dispositivo Android
+<a href="https://expo.dev/artifacts/eas/ub6vVUhPaTF11DQBfUTCsg.apk">Link para download

@@ -15,9 +15,9 @@ Este é um pequeno desafio proposto pela Rocketseat, no qual tive a oportunidade
 
 - [x] Adicionar função para criar nova nova tarefa
 - [x] Adicionar função para deletar uma tarefa
-- [] Adicionar função para contar quantas tarefas foram concluidas 
-- [] Adicionar função para contar quantas tarefas foram criadas 
-- [] Adcionar função para marcar tarefa como concluída e riscar a tarefa
+- [ ] Adicionar função para contar quantas tarefas foram concluidas 
+- [ ] Adicionar função para contar quantas tarefas foram criadas 
+- [ ] Adcionar função para marcar tarefa como concluída e riscar a tarefa
 ## Executando o projeto
 
 Faça o clone deste projeto em seu computador e depois execute com npx:

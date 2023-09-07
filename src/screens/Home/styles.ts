@@ -4,6 +4,7 @@ export const styles = StyleSheet.create({
   container: {
     backgroundColor: '#1A1A1A',
     flex: 1,
+    paddingBottom: 250,
   },
   form: {
     width: '100%',
@@ -30,6 +31,14 @@ export const styles = StyleSheet.create({
     height: 56,
     borderRadius: 5,
     backgroundColor: '#1E6F9F',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonPressing: {
+    width: 56,
+    height: 56,
+    borderRadius: 5,
+    backgroundColor: '#4EA8DE',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -82,5 +91,21 @@ export const styles = StyleSheet.create({
     fontWeight: '400',
     fontSize: 14,
     paddingBottom: 5,
+  },
+  task: {
+    color: '#fff',
+    flex: 1,
+    fontSize: 16,
+    marginLeft: 16,
+    textAlign: 'center',
+  },
+  taskFinished: {
+    color: '#fff',
+    opacity: 0.5,
+    flex: 1,
+    fontSize: 16,
+    marginLeft: 16,
+    textAlign: 'center',
+    textDecorationLine: 'line-through',
   },
 })

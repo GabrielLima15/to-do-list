@@ -1,32 +1,64 @@
 /* eslint-disable react/jsx-no-undef */
-import { Text, TouchableOpacity, View } from 'react-native'
+import {
+  ColorValue,
+  StyleProp,
+  Text,
+  TextStyle,
+  TouchableOpacity,
+  View,
+} from 'react-native'
 import { styles } from './styles'
-import React, { useState } from 'react'
 import Checkbox from 'expo-checkbox'
 import { Trash } from 'phosphor-react-native'
+import { useState } from 'react'
 
 interface NewTaskProps {
+  style: StyleProp<TextStyle>
   task: string
   onRemove: () => void
+  value: boolean | undefined
+  onValueChange: ((value: boolean) => void) | undefined
+  color: ColorValue | undefined
 }
 
-export function NewTask({ task, onRemove }: NewTaskProps) {
-  const [isChecked, setChecked] = useState(false)
+export function NewTask({
+  task,
+  onRemove,
+  onValueChange,
+  color,
+  value,
+  style,
+}: NewTaskProps) {
+  const [isPressed, setIsPressed] = useState(false)
 
+  const handlePressIn = () => {
+    setIsPressed(true)
+  }
+
+  const handlePressOut = () => {
+    setIsPressed(false)
+  }
+
+  const containerButton = isPressed ? styles.buttonPressing : styles.button
   return (
     <View style={styles.container}>
       <View style={styles.checkboxProps}>
         <Checkbox
-          value={isChecked}
-          onValueChange={setChecked}
+          value={value}
+          onValueChange={onValueChange}
           style={styles.checkbox}
-          color={isChecked ? '#5E60CE' : undefined}
+          color={color}
         />
       </View>
-      <Text style={styles.name}>{task}</Text>
+      <Text style={style}>{task}</Text>
 
-      <TouchableOpacity style={styles.button} onPress={onRemove}>
-        <Trash color="#808080" size={20} />
+      <TouchableOpacity
+        onPressIn={handlePressIn}
+        onPressOut={handlePressOut}
+        style={containerButton}
+        onPress={onRemove}
+      >
+        <Trash color={isPressed ? '#E25858' : '#808080'} size={20} />
       </TouchableOpacity>
     </View>
   )

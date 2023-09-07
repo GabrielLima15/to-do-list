@@ -21,15 +21,16 @@ Lembrando que é necessário ter uma conta no [Figma](http://figma.com/) para po
 
 - [x] Adicionar função para criar nova nova tarefa
 - [x] Adicionar função para deletar uma tarefa
-- [ ] Adicionar função para contar quantas tarefas foram concluidas 
-- [ ] Adicionar função para contar quantas tarefas foram criadas 
-- [ ] Adcionar função para marcar tarefa como concluída e riscar a tarefa
+- [x] Adicionar função para contar quantas tarefas foram concluidas 
+- [x] Adicionar função para contar quantas tarefas foram criadas 
+- [x] Adcionar função para marcar tarefa como concluída e riscar a tarefa 
 ## Executando o projeto
 
-Faça o clone deste projeto em seu computador e depois execute com npx:
+Faça o clone deste projeto em seu computador e depois execute com npm:
 
 para rodar o projeto
 ```bash 
 cd to-do-list
+npm install
 npx expo start
 ```

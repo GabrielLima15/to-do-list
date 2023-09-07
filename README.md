@@ -1,3 +1,6 @@
+![Alt text](Cover.jpg)
+
+
 # Desafio: To-Do List com React Native
 Este é um pequeno desafio proposto pela Rocketseat, no qual tive a oportunidade de explorar minha criatividade e minhas habilidades soft skills para criar um aplicativo de lista de tarefas (To-Do List) utilizando React Native.
 
@@ -6,6 +9,9 @@ Este é um pequeno desafio proposto pela Rocketseat, no qual tive a oportunidade
 - [x] ReactNative
 - [x] Typescript 
 
+## Figma do projeto
+Você pode visualizar o layout deste projeto através [desse link](https://www.figma.com/file/bTAYGsMHkmwJh9Lij27LFV/ToDo-List-%E2%80%A2-Desafio-React-Native-Copy?fuid=1029408669370399966).
+Lembrando que é necessário ter uma conta no [Figma](http://figma.com/) para poder acessar.
 ## Libs usadas
 
 - [x] Phosphor React (Para Icones)
